@@ -1,0 +1,54 @@
+# 是否應該接納邊境移民/潛在難民？
+## 觀點事實
+https://www.rescue.org/article/trump-administration-suspends-refugee-resettlement
+https://www.trade.gov.tw/Pages/Detail.aspx?nodeid=45&pid=782350
+https://public3.pagefreezer.com/browse/HHS.gov/02-01-2025T05:49/https://www.hhs.gov/about/news/2024/02/15/new-hhs-study-finds-nearly-124-billion-positive-fiscal-impact-refugees-and-asylees-on-american-economy-15-year-period.html
+https://zh.oosga.com/demographics/usa/
+https://www.iza.org/publications/dp/15317/the-economic-and-fiscal-effects-on-the-united-states-from-reduced-numbers-of-refugees-and-asylum-seekers
+https://immigrationimpact.com/2016/06/29/immigrant-workers-enhance-expand-u-s-economy/
+https://www.longtermtrends.net/home-price-median-annual-income-ratio/
+https://tradingeconomics.com/united-states/consumer-price-index-cpi
+https://nij.ojp.gov/
+https://teachingamericanhistory.org/document/letter-to-reverend-francis-adrian-vanderkemp/
+https://www.bbc.com/news/world-europe-38377428
+
+## 留言事實
+https://www.macromicro.me/charts/6/employment-condition
+https://en.wikipedia.org/wiki/Integration_of_immigrants?utm_source=chatgpt.com
+https://www.thenewslens.com/article/186015
+https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations
+https://www.thenewslens.com/article/111175
+https://www.ctee.com.tw/news/20221226700018-430705
+https://www.forwardpathway.com/163914?utm_source=chatgpt.com
+https://www.rescue.org/article/trump-administration-suspends-refugee-resettlement
+https://reurl.cc/vpObAN
+
+## 你覺得 2025 中央政府預算刪減案是否合理？
+## 觀點事實
+https://tw.news.yahoo.com/%E5%88%AA%E9%A0%90%E7%AE%97%E6%87%B6%E4%BA%BA%E5%8C%85%EF%BC%9A%E7%AB%8B%E6%B3%95%E9%99%A2%E7%B8%BD%E9%A0%90%E7%AE%97%E5%8D%94%E5%95%86%E7%A0%B4%E5%B1%80-%E6%95%B8%E7%99%BC%E9%83%A8%E3%80%81%E5%85%AC%E8%A6%96%E3%80%81%E8%BE%B2%E6%A5%AD%E9%83%A8%E3%80%81%E9%AB%94%E8%82%B2%E7%BD%B2%E3%80%81ncc%E9%A0%90%E7%AE%97%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A2%AB%E5%88%AA%EF%BC%9F%E8%A2%AB%E5%88%AA%E5%A4%9A%E5%B0%91%E5%8E%9F%E5%9B%A0%E4%B8%80%E6%AC%A1%E7%9C%8B-072834516.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAChvqx3IgzWRimdqTn-Xd1xe9tHOZYaPkM9MQb0UDYSyJWfMhcE2Ryt26pOzVQ-4ipZz476DTK5E7kxxrhE0bp9m9S5WF3QPNTji4lBhBHm3PgXojZ556B4Nao0d1d_vzCHbZL5Tm5z324bXRwl55IB8IUR0ns7zzKzDkUM6hufu
+https://www.thenewslens.com/article/168932
+https://chuckchu.com.tw/article/633
+https://www.youtube.com/watch?v=0jGT4bbU6Wg
+https://artemperor.tw/focus/6391
+https://udn.com/news/story/7238/8071515
+https://neww.tw/electricity/
+https://udn.com/news/story/6904/7850696
+https://www.ey.gov.tw/Page/9277F759E41CCD91/44dc7446-f3d3-4c97-ad4e-7bcfc0c66654
+https://money.udn.com/money/story/7307/8501808
+https://www.cna.com.tw/news/ahel/202502040205.aspx
+https://www.unews.com.tw/News/Info/6663
+
+
+## 觀點補充事實（？）
+https://navy.mnd.gov.tw/Files/Paper/5-%E5%BB%BA%E6%A7%8B%E6%B0%B4%E4%B8%8B%E9%98%B2%E8%A1%9B%E8%87%AA%E4%B8%BB%E7%A7%91%E6%8A%80.pdf
+
+https://watchout.tw/reports/8i7pZ85FZdGYTBGqtuqk
+
+
+## 留言事實
+https://www.youtube.com/watch?v=0jGT4bbU6Wg
+https://www.cw.com.tw/article/5012365
+https://www.moc.gov.tw/News_Content2.aspx?n=105&s=222797
+https://udn.com/news/story/7266/8429570
+https://udn.com/news/story/7320/8542557?from=udn_idlepage_ch2
+
