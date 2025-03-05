@@ -73,15 +73,15 @@ async def crawl4ai_crawl(url: str):
             title = result.metadata.get("title") if result.metadata else None
             
             if title:
-                print(f"✅ crawl4ai found: {title}")
+                print(f"Succeeded: crawl4ai found: {title}")
                 return {"url": url, "title": title}
             else:
                 # If title is not found, indicate the failure
-                print(f"⚠️ crawl4ai could not retrieve title: {url}")
+                print(f"WARN: crawl4ai did not find a title for {url}")
                 return None  # Return None to trigger fallback crawling
         except Exception as e:
             # Handle exceptions and indicate error
-            print(f"❌ crawl4ai encountered an error: {e}")
+            print(f"Error: crawl4ai encountered an error: {e}")
             return None  # Return None to trigger fallback crawling
 
 # Fallback crawling method using BeautifulSoup
@@ -91,16 +91,16 @@ async def bs_crawl(url: str):
         web.raise_for_status()        
         soup = BeautifulSoup(web.text, "html.parser")
         title = soup.title.get_text() if soup.title else "No title found"
-        print(f"✅ BeautifulSoup found: {title}")
+        print(f"Succeeded: BeautifulSoup found: {title}")
         return {"url": url, "title": title}
     except requests.RequestException as e:
-        print(f"❌ BeautifulSoup could not retrieve {url}: {e}")
+        print(f"Error: BeautifulSoup could not retrieve {url}: {e}")
         return {"url": url, "title": "Error"}
 
 async def crawl_title(url: str):
     result = await crawl4ai_crawl(url)
     if result is None:
-        result = await bs_crawl(url)
+        result = bs_crawl(url)
     return result
 
 async def crawl_titles(urls: list):

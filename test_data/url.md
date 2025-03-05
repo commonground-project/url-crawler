@@ -2,7 +2,10 @@
 ## 觀點事實
 https://www.rescue.org/article/trump-administration-suspends-refugee-resettlement
 https://www.trade.gov.tw/Pages/Detail.aspx?nodeid=45&pid=782350
+
+> 抓不到 .html 的 content
 https://public3.pagefreezer.com/browse/HHS.gov/02-01-2025T05:49/https://www.hhs.gov/about/news/2024/02/15/new-hhs-study-finds-nearly-124-billion-positive-fiscal-impact-refugees-and-asylees-on-american-economy-15-year-period.html
+
 https://zh.oosga.com/demographics/usa/
 https://www.iza.org/publications/dp/15317/the-economic-and-fiscal-effects-on-the-united-states-from-reduced-numbers-of-refugees-and-asylum-seekers
 https://immigrationimpact.com/2016/06/29/immigrant-workers-enhance-expand-u-s-economy/
@@ -40,7 +43,9 @@ https://www.unews.com.tw/News/Info/6663
 
 
 ## 觀點補充事實（？）
+> (抓不到 .pdf 的 title，後來決定放棄不支援 .pdf 檔)
 https://navy.mnd.gov.tw/Files/Paper/5-%E5%BB%BA%E6%A7%8B%E6%B0%B4%E4%B8%8B%E9%98%B2%E8%A1%9B%E8%87%AA%E4%B8%BB%E7%A7%91%E6%8A%80.pdf
+
 
 https://watchout.tw/reports/8i7pZ85FZdGYTBGqtuqk
 

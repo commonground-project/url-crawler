@@ -103,6 +103,6 @@ python main.py
   ```json
   {
     "url": "https://example.com",
-    "content": "# title...."
+    "content": "# content...."
   }
   ```
