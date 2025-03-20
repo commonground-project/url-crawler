@@ -3,7 +3,7 @@
 https://www.rescue.org/article/trump-administration-suspends-refugee-resettlement
 https://www.trade.gov.tw/Pages/Detail.aspx?nodeid=45&pid=782350
 
-> 抓不到 .html 的 content
+> 抓不到 .html 的 content，應該沒辦法了
 https://public3.pagefreezer.com/browse/HHS.gov/02-01-2025T05:49/https://www.hhs.gov/about/news/2024/02/15/new-hhs-study-finds-nearly-124-billion-positive-fiscal-impact-refugees-and-asylees-on-american-economy-15-year-period.html
 
 https://zh.oosga.com/demographics/usa/

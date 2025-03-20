@@ -18,7 +18,7 @@ async def crawl4ai_crawl(url: str):
                     "a", "nav", "li", "label", "button", "input", "ul", "ol",
                     "header", "footer", "nav", "aside", "script", "style", "src"
                     "iframe", "noscript", "svg", "canvas", "object", "embed", "video", 
-                    "audi˜o", "picture", "source", "track", "link", "map", "area", "input",
+                    "audio", "picture", "source", "track", "link", "map", "area", "input",
                     "menu", "sidebar", "share", "comment", "img", "figure", "figcaption",
                     "ads", "ad", "advertisement", "sponsored", "promotion", "popup", 
                     "banner", "modal", "overlay", "social", "related", "recommendations"
