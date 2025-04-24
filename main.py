@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from title_crawler import crawl_title, crawl_titles
+from urllib.parse import unquote
 from content_crawler import crawl_content
 from pydantic import BaseModel
 import nest_asyncio
@@ -16,13 +17,6 @@ class Request(BaseModel):
 async def root():
     return {"message": "Hello, this is the root of the API. Try /title/{url} or /content/{url}"}
 
-# @app.get("/title/{url:path}") 
-# async def load_title(url: str):
-#     result = await crawl_title(url)
-#     return result
-
-from urllib.parse import unquote
-
 @app.get("/title/{url:path}")
 async def load_title(url: str):
     decoded_url = unquote(url)  
@@ -38,7 +32,9 @@ async def load_titles(request: Request):
 
 @app.get("/content/{url:path}")
 async def load_content(url: str):
-    result = await crawl_content(url)
-    return result
+    decoded_url = unquote(url)  
+    print(f"Received URL: {decoded_url}")
+    result = await crawl_content(decoded_url)
+    return JSONResponse(content=result, media_type="application/json")
 
 
