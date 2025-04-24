@@ -23,7 +23,6 @@ async def load_title(url: str):
     print(f"Received URL: {decoded_url}")
     result = await crawl_title(decoded_url)
     return JSONResponse(content=result, media_type="application/json")
-    # return result
 
 @app.post("/titles")
 async def load_titles(request: Request):

@@ -24,15 +24,21 @@ async def crawl4ai_crawl(url: str):
                     "banner", "modal", "overlay", "social", "related", "recommendations"
                 ],
             )
-            result = await crawler.arun(url=url, config=config)
+            result = await asyncio.wait_for(
+                crawler.arun(url=url, config=config),
+                timeout=30
+            )
             return result if result else None
+        except asyncio.TimeoutError:
+            print(f"[TIMEOUT]: crawl4ai trying to crawl {url} took too long")
+            return None
         except Exception as e:
-            print(f"Error: crawl4ai encountered an error: {e}")
+            print(f"[ERROR]: crawl4ai encountered an error: {e}")
             return None
 
 def bs_crawl(url: str):
     try:
-        web = requests.get(url)
+        web = requests.get(url, timeout=30)
         web.raise_for_status()
         soup = BeautifulSoup(web.text, "html.parser")
         
@@ -61,10 +67,13 @@ def bs_crawl(url: str):
         content = "\n".join([line for line in content.splitlines() if line.strip()])
         return content
     
+    except requests.Timeout:
+        print(f"[TIMEOUT]: bs_crawl trying to crawl {url} took too long")
+        return None
     except requests.RequestException as e:
-        print(f"Error: bs_crawl encountered an error: {e}")
-        return "No content found"
-
+        print(f"[ERROR]: bs_crawl encountered an error: {e}")
+        return None
+    
 async def crawl_content(url: str):
     result = await crawl4ai_crawl(url)
     if result is None:
