@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests==2.32.3
+beautifulsoup4
+crawl4ai==0.4.24
+nest_asyncio
+numpy>=1.26.0
