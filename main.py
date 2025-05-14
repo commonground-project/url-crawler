@@ -7,11 +7,26 @@ import nest_asyncio
 import asyncio
 from typing import List
 from fastapi.responses import JSONResponse
+from playwright.async_api import async_playwright
+
 
 app = FastAPI()
 
 class Request(BaseModel):
     urls: List[str]
+
+# async def start_browser():
+#     async with async_playwright() as p:
+#         browser = await p.chromium.launch(executable_path='/opt/google/chrome/chrome')  
+#         page = await browser.new_page()
+#         await page.goto("https://example.com")
+#         print(await page.title())  
+#         await browser.close()
+
+# @app.on_event("startup")
+# async def startup_event():
+#     await start_browser()
+
 
 @app.get("/")
 async def root():
@@ -35,5 +50,3 @@ async def load_content(url: str):
     print(f"Received URL: {decoded_url}")
     result = await crawl_content(decoded_url)
     return JSONResponse(content=result, media_type="application/json")
-
-
