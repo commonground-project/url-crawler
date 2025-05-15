@@ -1,4 +1,4 @@
-# FROM mcr.microsoft.com/playwright:v1.17.0-rc1-focal
+FROM mcr.microsoft.com/playwright:v1.17.0-rc1-focal AS playwright-build
 
 FROM python:3.9-slim
 
@@ -10,11 +10,7 @@ RUN pip install --upgrade pip
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-# RUN pip install playwright
-
 RUN python -m playwright install --with-deps chromium
-
-# RUN playwright install chrome
 
 EXPOSE 8000
 
