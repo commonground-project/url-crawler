@@ -3,7 +3,7 @@ import asyncio
 import nest_asyncio
 import requests
 from bs4 import BeautifulSoup
-from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig
+from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig, BrowserConfig
 from crawl4ai.extraction_strategy import JsonXPathExtractionStrategy
 
 async def crawl4ai_crawl(url: str):

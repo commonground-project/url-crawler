@@ -3,8 +3,13 @@ import asyncio
 import nest_asyncio
 import requests
 from bs4 import BeautifulSoup
-from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig
+from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig, BrowserConfig
 from crawl4ai.extraction_strategy import JsonXPathExtractionStrategy
+
+browser_cfg = BrowserConfig(
+    browser_type="firefox",
+    headless=True,
+)
 
 # Define the XPath schema for crawl4ai
 schema = {
@@ -62,7 +67,7 @@ schema = {
     }
 
 async def crawl4ai_crawl(url: str):
-    async with AsyncWebCrawler() as crawler:
+    async with AsyncWebCrawler(config = browser_cfg) as crawler:
         try:
             extraction_strategy = JsonXPathExtractionStrategy(schema, verbose=True)
             config = CrawlerRunConfig(

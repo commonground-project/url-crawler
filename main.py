@@ -15,45 +15,43 @@ app = FastAPI()
 class Request(BaseModel):
     urls: List[str]
 
-# async def start_browser():
+async def start_browser():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(channel='chromium')  
+        page = await browser.new_page()
+        await page.goto("https://www.twreporter.org/a/three-tears-in-borneo")
+        title = await page.title()
+        print(f"Page title: {title}")  
+        await browser.close()
+# 
+# @app.on_event("startup")
+# async def startup_event():
+#     await start_browser()
+
+# async def crawl_using_remote_browser():
 #     async with async_playwright() as p:
-#         browser = await p.chromium.launch(executable_path='/opt/google/chrome/chrome')  
+#         # 連接遠端 headless-shell，host.docker.internal 用於 docker container 連回本機
+        
+#         browser = await p.chromium.connect_over_cdp("http://headless-shell:9222")
 #         page = await browser.new_page()
 #         await page.goto("https://example.com")
-#         print(await page.title())  
+#         title = await page.title()
 #         await browser.close()
-from fastapi import FastAPI
-from title_crawler import crawl_title, crawl_titles
-from urllib.parse import unquote
-from content_crawler import crawl_content
-from pydantic import BaseModel
-import nest_asyncio
-import asyncio
-from typing import List
-from fastapi.responses import JSONResponse
-from playwright.async_api import async_playwright
+#         return title
+
 
 
 app = FastAPI()
 
 class Request(BaseModel):
     urls: List[str]
+    browser_type: str = "chromium"
 
-async def start_browser():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(channel='chromium')  
-        page = await browser.new_page()
-        await page.goto("https://example.com")
-        title = await page.title()
-        print(f"Page title: {title}")  
-        await browser.close()
 
-@app.on_event("startup")
-async def startup_event():
-    await start_browser()
 
 @app.get("/")
 async def root():
+    # await start_browser()
     return {"message": "Hello, this is the root of the API. Try /title/{url} or /content/{url}"}
 
 @app.get("/title/{url:path}")
